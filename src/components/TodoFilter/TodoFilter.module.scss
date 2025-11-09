@@ -1,0 +1,55 @@
+.filter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  padding: 16px 0;
+  border-bottom: 1px solid #eee;
+
+  @media (max-width: 480px) {
+    flex-direction: column;
+    gap: 12px;
+    align-items: stretch;
+  }
+}
+
+.count {
+  font-weight: 500;
+  color: #666;
+  font-size: 14px;
+
+  strong {
+    color: #3498db;
+    font-size: 16px;
+  }
+}
+
+.buttons {
+  display: flex;
+  gap: 4px;
+  background: #f8f9fa;
+  padding: 4px;
+  border-radius: 6px;
+}
+
+.button {
+  padding: 8px 16px;
+  border: none;
+  background: transparent;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: all 0.2s;
+  color: #666;
+
+  &:hover {
+    background: rgba(52, 152, 219, 0.1);
+    color: #3498db;
+  }
+
+  &.active {
+    background: #3498db;
+    color: white;
+    box-shadow: 0 2px 4px rgba(52, 152, 219, 0.3);
+  }
+}
